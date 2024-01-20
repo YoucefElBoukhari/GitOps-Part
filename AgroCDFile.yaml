@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://gitlab.com/el-boukhari/angular-gitops-part.git
     targetRevision: HEAD
-    path: k8sFiles
+    path: K8sFiles
   destination:
     server: https://kubernetes.default.svc
     namespace: angular-app
