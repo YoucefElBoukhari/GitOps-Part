@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: angular-deployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: nginx
+      app: angular-frontend
   template:
     metadata:
       labels:
-        app: nginx
+        app: angular-frontend
     spec:
       containers:
-        - name: nginx
-          image: nginx:latest
+        - name: angular-frontend
+          image: elboukhariyoucef/angularapp:1.0.0
           ports:
             - containerPort: 80
